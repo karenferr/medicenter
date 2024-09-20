@@ -1,0 +1,405 @@
+body {
+  font-family: arial;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu a {
+  padding: 15px;
+  text-transform: UPPERCASE;
+  color: #727272;
+}
+.menu .active,
+.menu a:hover {
+  background-color: #39aae1;
+}
+
+#banner {
+  background-image: url("/img/img1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+.column {
+  flex-direction: column;
+}
+.banner-headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-options {
+  height: 200px;
+  display: flex;
+}
+.banner-headline h1 {
+  color: #fff;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px #555;
+  max-width: 350px;
+}
+.banner-headline h2 {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0px 1px 0px #555;
+  max-width: 350px;
+  margin-top: 30px;
+}
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+.banner1 {
+  background-color: #39aae1;
+}
+.banner2 {
+  background-color: #0079c7;
+}
+.banner3 {
+  background-color: #2b4c99;
+}
+.banner-options h1 {
+  font-size: 20px;
+}
+.banner-options p {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner-options a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+.banner3 .hour {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0079c7;
+  align-items: center;
+}
+#general {
+  display: flex;
+  justify-content: center;
+}
+#general section {
+  flex: 2;
+}
+#general aside {
+  flex: 1;
+}
+.widget-tittle {
+  margin-top: 30px;
+}
+.widget-tittle-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.widget-tittle-bar {
+  width: 50px;
+  height: 3px;
+  background-color: #36a9e1;
+  margin-top: 10px;
+}
+
+article .news-data {
+  display: flex;
+  margin-top: 15px;
+}
+article .news-posted-at,
+article .news-comments {
+  background-color: #2b4c99;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+}
+article .news-comments {
+  background-color: #39aae1;
+  margin-left: 2px;
+}
+article .news-thumb img {
+  width: 100%;
+  height: auto;
+}
+article .news-thumb {
+  margin-top: 30px;
+}
+article .news-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #000;
+  font-size: 23px;
+}
+article .news-resume {
+  color: #5c5c5c;
+  font-size: 14px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* quebrar linha */
+}
+article {
+  flex: 1;
+  /* tds mesmo tamanho */
+  min-width: 300px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.footer-menu {
+  display: flex;
+}
+.fm-1,
+.fm-2,
+.fm-3 {
+  flex: 1;
+  color: #fff;
+}
+.fm-1 {
+  background-color: #39aae1;
+}
+.fm-2 {
+  background-color: #0079c7;
+}
+.fm-3 {
+  background-color: #2b4c99;
+}
+.footer-area {
+  display: flex;
+  color: white;
+}
+.footer-area-item {
+  flex: 1;
+  color: white;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+footer .widget-tittle-text {
+  color: white;
+}
+.footer-copy {
+  border-top: 1px solid #2c2c2c;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  margin-top: 30px;
+  color: #5c5c5c;
+}
+.footer-menu a {
+  display: block; /* pega td area do quadrado */
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+
+.menu-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.widget-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  gap: 50px;
+}
+.widget-body .square {
+  width: 150px;
+  height: 150px;
+  background: #39aae1;
+}
+.widget-body-2 {
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.item {
+  border-top: 1px solid grey;
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+.item img {
+  width: 24px;
+}
+.item span {
+  font-weight: bold;
+}
+.footer-menu a {
+  padding: 20px 0px 5px 20px;
+}
+.footer-menu a {
+  font-size: 20px;
+}
+.footer-menu p {
+  font-size: 12px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.footer-area .widget-body {
+  margin-top: 20px;
+  grid-template-columns: 1fr;
+  color: grey;
+  line-height: 1.25;
+  font-size: 14px;
+  padding-right: 20px;
+}
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+.email a {
+  color: white;
+}
+.latest-posts li, .tweets li {
+  color: white;
+  list-style:disc;
+  font-size: 14px;
+}
+.latest-posts .year, .tweets .year {
+  color: #36a9e1;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+.tweets li {
+color: grey;
+}
+.tweets span {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .banner-headline {
+    padding: 20px;
+  }
+  .banner-headline h1 {
+    font-size: 55px;
+  }
+  .banner-headline h2 {
+    font-size: 15px;
+  }
+  .banner-options {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #general section,
+  #general aside {
+    padding: 20px;
+  }
+  .footer-menu {
+    flex-direction: column;
+  }
+  .footer-area {
+    flex-direction: column;
+    padding: 20px;
+  }
+  header .container {
+    flex-direction: row;
+  }
+  .menu ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #ffff;
+  }
+  header {
+    height: auto;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .mm-line {
+    height: 3px;
+    background: #39aae1;
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .widget-body {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+    gap: 25px;
+    place-items: center;
+  }
+  .widget-body .square {
+    width: 200px;
+    height: 200px;
+  }
+  #general section {
+    margin-top: 320px;
+  }
+  article {
+    margin-right: 0px;
+  }
+  .footer-copy {
+    text-align: center;
+  }
+  .widget-body-2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .item {
+    gap: 10px;
+  }
+  .latest-posts .year, .tweets .year {
+    margin-bottom: 25px;
+  }
+  .tweets, .latest-posts {
+padding-left: 10px;
+  }
+  .footer-copy {
+    margin-top: 0px;
+  }
+  .adress {
+    gap: 15px;
+  }
+}
