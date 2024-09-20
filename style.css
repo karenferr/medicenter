@@ -36,7 +36,7 @@ a {
 }
 
 #banner {
-  background-image: url("/img/img1.jpg");
+  background-image: url("./img/img1.jpg");
   background-position: center;
   background-size: cover;
   height: 700px;
